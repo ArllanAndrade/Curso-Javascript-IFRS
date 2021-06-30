@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Eventos 2 | Click | JavaScript</title>
+		<script src="js/evento-click.js"></script>
+		
+		<!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+
+	<body>
+
+		<section class="container">
+
+			<h1>Eventos de Click</h1>			
+			<h2>Ações serão executadas após Eventos de Click (onClick e onDblClick) serem carregados.</h2>
+
+			<br><hr><br>
+
+			<h3>Exemplo:</h3>
+
+			<img src="img/imagem-exemplo-01.jpg" id="imagem" onclick="umClique()" ondblclick="doisCliques()" width="300" style="display:block;">
+
+			<br><hr><br>
+
+			<h3>Log de ocorrências:</h3>
+			<div id="log">				
+			</div>
+
+			<br><hr><br>
+
+			<p><strong><i>onClick</i></strong> -&gt; Executa quando um elemento é clicado uma vez.</p>
+			<p><strong><i>onDblClick</i></strong> -&gt; Executa quando um elemento é clicado duas vezes (clique rápido).</p>
+			<p><strong><i>getElementById</i></strong> -&gt; Procura algum elemento da página com este id.</p>
+			<p><strong><i>innerHTML</i></strong> -&gt; Introduz um código html.</p>
+			
+			<br><hr><br>
+
+			<p><strong>Código js:</strong></p>			
+
+			<code class="language-js" data-lang="js">
+				function umClique() { <br>
+					document.getElementById("imagem").src="img/imagem-exemplo-02.jpg";<br>
+					document.getElementById("log").innerHTML += "Troca para a <i>segunda</i> imagem.&lt;br&gt;";<br>
+				}<br>
+				<br>
+				function doisCliques() {<br>
+					document.getElementById("imagem").src="img/imagem-exemplo-01.jpg";<br>
+					document.getElementById("log").innerHTML += "Troca para a <i>primeira</i> imagem.&lt;br&gt;";<br>
+				}<br>
+			</code>
+
+			<br>
+
+			<p><strong>Código html:</strong></p>
+			<code class="language-html" data-lang="html">
+				&lt;img src="img/imagem-exemplo-01.jpg" id="imagem" onClick="umClique()" onDblClick="doisCliques()" width="300"&gt;
+			</code>
+
+			<br>
+			<br>
+			<br>
+
+		</section>
+		<!-- end section container -->
+
+
+	</body>
+
+</html>
