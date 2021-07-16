@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Eventos 3 | Input | JavaScript</title>
+		<script src="js/evento3-input.js"></script>
+		
+		<!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+
+	<body>
+
+		<section class="container">
+
+			<h1>Eventos de Input</h1>			
+			<h2>Ações serão executadas após Eventos de Input (onClick e onDblClick) serem carregados.</h2>
+
+			<br><hr><br>
+
+			<h3>Exemplo:</h3><br>
+
+			<form name="formTeste" onsubmit="return submeti()" onreset="resetei()">
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome" onblur="saiDoCampo()" onchange="mudei ()" onfocus="entreiNoCampo()" onselect="selecionei()" onkeydown="aperteiTecla()" onkeyup="solteiTecla()">
+				<br>
+				<button type="submit">Enviar</button>
+				<button type="reset">Limpar</button>
+			</form>
+
+			<br><hr><br>
+
+			<h3>Log de ocorrências:</h3>
+			<div id="log">				
+			</div>
+
+			<br><hr><br>
+
+			<p><strong><i>onBlur</i></strong> -&gt; Quando sai do campo.</p>
+			<p><strong><i>onChange</i></strong> -&gt; Quando muda o conteúdo do campo.</p>
+			<p><strong><i>onFocus</i></strong> -&gt; Quando entra no campo.</p>
+			<p><strong><i>onSelect</i></strong> -&gt; Quando um texto é selecionado.</p>
+			<p><strong><i>onSubmit</i></strong> -&gt; Quando o formulário é submetido. Antes de chamar a função, precisa colocar <i>return</i>, por exemplo: "return nomedafuncao()". Pois ele normalmente fazemos aqui algumas verificações das informações preenchidos no form. Ou seja, ele só envia as iformações se tudo estiver validado.</p>
+			<p><strong><i>onReset</i></strong> -&gt; Quando o botão de reset é clicado.</p>
+			<p><strong><i>onKeyDown</i></strong> -&gt; Quando pressionada a tecla.</p>
+			<p><strong><i>onKeyUp</i></strong> -&gt; Quando solta a tecla pressionada.</p>
+			
+			<br><hr><br>
+
+			<p><strong>Código js:</strong></p>			
+
+			<code class="language-js" data-lang="js">
+				
+			</code>
+
+			<br>
+
+			<p><strong>Código html:</strong></p>
+
+			<code class="language-html" data-lang="html">
+				
+			</code>
+
+			<br><br><br>
+
+		</section>
+		<!-- end section container -->
+
+	</body>
+
+</html>
