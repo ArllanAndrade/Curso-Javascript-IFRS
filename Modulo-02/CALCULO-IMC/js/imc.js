@@ -1,4 +1,5 @@
 function calculaIMC(){
+    
     document.getElementById("peso").style.border = "inset 2px darkgrey";
     document.getElementById("peso").style.backgroundColor = "white";
     document.getElementById("altura").style.border = "inset 2px darkgrey";
