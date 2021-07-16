@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Validação 1 | Campo Vazio | JavaScript</title>
+		<script src="js/campovazio.js"></script>
+		
+		<!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+
+	<body>
+
+		<section class="container">
+
+			<h1>Validação 1 - Campo Vazio</h1>
+			
+			<h2>Não deixar que o campo seja enviado sem informação alguma.</h2>
+
+			<br>
+			<hr>
+			<br>
+
+			<form onsubmit="return verificaForm()">
+				<label for="nome">*Nome:</label>
+				<input type="text" id="nome" name="nome">
+				<button type="submit">Enviar</button>
+			</form>
+
+			<br>
+			<hr>
+			<br>
+
+			<h3>Log de ocorrências:</h3>
+			<div id="log">
+			</div>
+
+			<br>
+			<hr>
+			<br>
+
+			<p><strong><i>document</i></strong> -&gt; Significa a página html onde o arquivo .js está sendo chamado. Por exemplo, aqui, o <i>document</i> significa <i>exemplo-evento1-load.html</i></p>
+			<p><strong><i>getElementById</i></strong> -&gt; Procura algum elemento da página com este id.</p>
+			<p><strong><i>innerHTML</i></strong> -&gt; Introduz um código html.</p>
+			
+			<br>
+			<hr>
+			<br>
+
+			<p><strong>Código js:</strong></p>			
+
+			<code class="language-js" data-lang="js">
+				function carreguei() { <br>
+					document.getElementById("log").innerHTML += "Carreguei!&it;*br*&gt;";<br>
+				}<br>
+				<br>
+				function redimensionei() {<br>
+					document.getElementById("log").innerHTML += "Redimensionei!&it;*br*&gt;";<br>
+				}<br>
+			</code>
+
+
+
+		</section>
+		<!-- end section container -->
+
+
+	</body>
+
+</html>
